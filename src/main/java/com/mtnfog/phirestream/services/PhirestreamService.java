@@ -23,7 +23,7 @@ import retrofit2.http.*;
 public interface PhirestreamService {
 
 	@Headers({"Content-Type: application/vnd.kafka.json.v2+json"})
-	@POST("/api/topics/{topic}")
+	@POST("/topics/{topic}")
 	Call<ProduceResponse> produce(@Path("topic") String topic,
 								  @Query("async") boolean async,
 								  @Query("profile") String profile,
@@ -32,7 +32,7 @@ public interface PhirestreamService {
 								  @Body ProduceRequest produceRequest);
 
 	@Headers({"Content-Type: application/vnd.kafka.json.v2+json"})
-	@POST("/api/topics/{topic}")
+	@POST("/topics/{topic}")
 	Call<ProduceResponse> produce(@Path("topic") String topic, int partition,
 								  @Query("async") boolean async,
 								  @Query("profile") String profile,
