@@ -1,10 +1,8 @@
 # Phirestream SDK for Java
 
-The **Phirestream SDK for Java** enables Java developers to easily work with Phirestream. [Phirestream](https://www.mtnfog.com/products/phirestream/) redacts PHI and PII from data stream. Refer to [Phirestream API](https://phirestream.mtnfog.com/api/) documentation for details on the methods available.
+The **Phirestream SDK for Java** is an API client for [Phirestream](https://www.mtnfog.com/products/phirestream/), software to identify and redact sensitive information such as PHI and PII from data streams. Phirestream is built upon the open source PII/PHI detection engine [Phileas](https://github.com/philterd/phileas).
 
-[![Build Status](https://travis-ci.org/mtnfog/phirestream-sdk-java.svg?branch=master)](https://travis-ci.org/mtnfog/phirestream-sdk-java)
-![Maven Central](https://img.shields.io/maven-central/v/com.mtnfog/phirestream-java-sdk)
-[![javadoc](https://javadoc.io/badge2/com.mtnfog/phirestream-java-sdk/javadoc.svg)](https://javadoc.io/doc/com.mtnfog/phirestream-java-sdk)
+Refer to the [Phirestream API](https://docs.mtnfog.com/phirestream/api-and-sdks/api) documentation for details on the methods available.
 
 ## Example Usage
 
@@ -23,7 +21,7 @@ Release dependencies are available in Maven Central.
 
 ```
 <dependency>
-  <groupId>com.mtnfog</groupId>
+  <groupId>io.philterd</groupId>
   <artifactId>phirestream-sdk-java</artifactId>
   <version>1.0.0</version>
 </dependency>
@@ -34,7 +32,7 @@ Snapshot dependencies are available in the Maven Central Snapshot Repository by 
 ```
 <repository>
   <id>snapshots</id>
-  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
   <releases><enabled>false</enabled></releases>
   <snapshots><enabled>true</enabled></snapshots>
 </repository>
@@ -49,5 +47,5 @@ Snapshot dependencies are available in the Maven Central Snapshot Repository by 
 
 This project is licensed under the Apache License, version 2.0.
 
-Copyright 2021 Mountain Fog, Inc.
+Copyright 2021-2023 Mountain Fog, Inc.
 Phirestream is a registered trademark of Mountain Fog, Inc.
